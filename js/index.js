@@ -3,14 +3,14 @@ const animalA = {
   age: 8,
   weight: 4000,
   species: "Elephas primigenius",
-  exctionctionDate: -2000,
+  exctinctionDate: -2000,
 };
 const animalB = {
   name: "Pteranodon",
   age: 4,
   wight: 50,
   species: "Pteranodon longiceps",
-  exctincitonDate: -100000,
+  exctinctionDate: -100000,
 };
 
 const getAnimalSpecies = (animal) => {
@@ -18,4 +18,10 @@ const getAnimalSpecies = (animal) => {
 };
 
 // refactorizado: const getAnimalSpecies = (animal) => animal.species
+
+const isExctinct = (animal) => {
+  return animal.hasOwnProperty("exctinctionDate");
+};
+
+// console.log(isExctinct(animalA))
 
